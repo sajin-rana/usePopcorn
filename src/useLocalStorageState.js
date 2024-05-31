@@ -7,6 +7,8 @@ export function useLocalStorageState(intialState, key) {
     return storedValue ? JSON.parse(storedValue) : intialState;
   });
 
+  console.log("hello");
+
   useEffect(
     function () {
       localStorage.setItem(key, JSON.stringify(value));
