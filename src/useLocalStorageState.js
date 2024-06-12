@@ -8,7 +8,7 @@ export function useLocalStorageState(intialState, key) {
     return storedValue ? JSON.parse(storedValue) : intialState;
   });
 
-  console.log("this is the new branch");
+  console.log("this is the branch-1");
 
   useEffect(
     function () {
